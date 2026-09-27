@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rhodah Kithuku | Women Representative - Kitui County</title>
+
+  <meta name="description"
+        content="Official campaign website for Rhodah Kithuku, candidate for Women Representative of Kitui County.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --blue: #063b82;
+      --dark-blue: #022653;
+      --red: #e21b2d;
+      --white: #ffffff;
+      --light: #f5f8fc;
+      --dark: #142033;
+      --gray: #667085;
+      --gold: #f4b400;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: var(--white);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(6, 59, 130, 0.97);
+      box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+    }
+
+    .nav {
+      width: 90%;
+      max-width: 1250px;
+      margin: auto;
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: .5px;
+    }
+
+    .logo span {
+      color: var(--red);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      transition: .3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffccd1;
+    }
+
+    .menu-btn {
+      display: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      padding: 120px 6% 70px;
+      background:
+        linear-gradient(rgba(2,38,83,.88), rgba(6,59,130,.82)),
+        url("rhodah.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-container {
+      width: 100%;
+      max-width: 1250px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero-text {
+      color: white;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 17px;
+      background: var(--red);
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 75px);
+      line-height: 1.05;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: #ff5360;
+    }
+
+    .hero h2 {
+      font-size: clamp(20px, 3vw, 32px);
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 17px;
+      opacity: .95;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 13px 23px;
+      border-radius: 8px;
+      font-weight: 700;
+      display: inline-block;
+      transition: .3s;
+      border: 2px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--red);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #c91021;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border-color: white;
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--blue);
+    }
+
+    .hero-photo {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-photo img {
+      width: min(420px, 90%);
+      height: 500px;
+      object-fit: cover;
+      border-radius: 25px;
+      border: 7px solid rgba(255,255,255,.9);
+      box-shadow: 0 20px 50px rgba(0,0,0,.35);
+    }
+
+    /* GENERAL */
+    section {
+      padding: 85px 6%;
+      scroll-margin-top: 75px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title span {
+      color: var(--red);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+    }
+
+    .section-title h2 {
+      color: var(--blue);
+      font-size: clamp(30px, 4vw, 43px);
+      margin-top: 7px;
+    }
+
+    .section-title p {
+      color: var(--gray);
+      max-width: 700px;
+      margin: 10px auto 0;
+    }
+
+    /* ABOUT */
+    .about {
+      background: var(--light);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0,0,0,.15);
+    }
+
+    .about-text h3 {
+      color: var(--blue);
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      color: var(--gray);
+      margin-bottom: 15px;
+    }
+
+    .highlight-box {
+      border-left: 5px solid var(--red);
+      background: white;
+      padding: 18px 20px;
+      margin-top: 22px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.06);
+    }
+
+    /* VISION */
+    .vision {
+      background: white;
+    }
+
+    .vision-box {
+      max-width: 950px;
+      margin: auto;
+      text-align: center;
+      background: linear-gradient(135deg, var(--blue), var(--dark-blue));
+      color: white;
+      padding: 55px 30px;
+      border-radius: 25px;
+      box-shadow: 0 15px 35px rgba(0,0,0,.15);
+    }
+
+    .vision-box h3 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .vision-box p {
+      font-size: 17px;
+      opacity: .95;
+    }
+
+    /* AGENDA */
+    .agenda {
+      background: var(--light);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 24px;
+      border-radius: 16px;
+      box-shadow: 0 7px 25px rgba(0,0,0,.07);
+      border-top: 4px solid var(--blue);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 15px 30px rgba(0,0,0,.12);
+    }
+
+    .card .icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e8f0fb;
+      color: var(--blue);
+      font-size: 25px;
+      margin-bottom: 17px;
+    }
+
+    .card h3 {
+      color: var(--blue);
+      margin-bottom: 9px;
+      font-size: 19px;
+    }
+
+    .card p {
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    /* KITUI */
+    .kitui {
+      background: white;
+    }
+
+    .county-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .ward {
+      background: var(--light);
+      border-radius: 10px;
+      padding: 17px;
+      text-align: center;
+      font-weight: 600;
+      color: var(--blue);
+      border: 1px solid #e2e8f0;
+    }
+
+    /* MESSAGE */
+    .message {
+      background: linear-gradient(135deg, #e21b2d, #a70e1d);
+      color: white;
+      text-align: center;
+    }
+
+    .message h2 {
+      font-size: clamp(30px, 5vw, 48px);
+      margin-bottom: 15px;
+    }
+
+    .message p {
+      max-width: 750px;
+      margin: auto auto 25px;
+      font-size: 17px;
+    }
+
+    /* GALLERY */
+    .gallery {
+      background: var(--light);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .gallery-item {
+      height: 260px;
+      overflow: hidden;
+      border-radius: 15px;
+      background: #dbe4ef;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .4s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.07);
+    }
+
+    /* CONTACT */
+    .contact {
+      background: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 45px;
+    }
+
+    .contact-info {
+      background: var(--blue);
+      color: white;
+      padding: 35px;
+      border-radius: 18px;
+    }
+
+    .contact-info h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .contact-info p {
+      opacity: .9;
+      margin-bottom: 22px;
+    }
+
+    .contact-detail {
+      margin: 17px 0;
+    }
+
+    .contact-detail strong {
+      display: block;
+      color: #ffb8be;
+    }
+
+    form {
+      background: var(--light);
+      padding: 30px;
+      border-radius: 18px;
+    }
+
+    .form-group {
+      margin-bottom: 17px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 7px;
+      color: var(--blue);
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #d0d7e2;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+      background: white;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--blue);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #021d3e;
+      color: white;
+      text-align: center;
+      padding: 40px 6%;
+    }
+
+    .footer-logo {
+      font-size: 23px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .footer-logo span {
+      color: var(--red);
+    }
+
+    .socials {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .socials a {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .3s;
+      font-size: 15px;
+    }
+
+    .socials a:hover {
+      background: var(--red);
+    }
+
+    footer p {
+      font-size: 13px;
+      opacity: .75;
+    }
+
+    /* WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 27px;
+      z-index: 999;
+      box-shadow: 0 6px 20px rgba(0,0,0,.25);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+
+      .nav-links {
+        position: absolute;
+        top: 72px;
+        right: 0;
+        width: 100%;
+        background: var(--blue);
+        display: none;
+        flex-direction: column;
+        padding: 20px 0 25px;
+        gap: 17px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .hero-container,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        text-align: center;
+      }
+
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero-photo {
+        order: -1;
+      }
+
+      .hero-photo img {
+        height: 390px;
+        width: min(350px, 90%);
+      }
+
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .county-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      section {
+        padding: 65px 5%;
+      }
+
+      .hero {
+        padding: 105px 5% 60px;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .hero h2 {
+        font-size: 21px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .hero-photo img {
+        height: 340px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .county-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item {
+        height: 300px;
+      }
+
+      .contact-info,
+      form {
+        padding: 23px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav">
+
+      <a href="#home" class="logo">
+        RHODAH <span>KITHUKU</span>
+      </a>
+
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#vision" onclick="closeMenu()">Vision</a></li>
+        <li><a href="#agenda" onclick="closeMenu()">Agenda</a></li>
+        <li><a href="#kitui" onclick="closeMenu()">Kitui</a></li>
+        <li><a href="#gallery" onclick="closeMenu()">Gallery</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+
+  <!-- HOME -->
+  <section class="hero" id="home">
+
+    <div class="hero-container">
+
+      <div class="hero-text">
+
+        <span class="badge">KITUI COUNTY • 2027</span>
+
+        <h1>
+          RHODAH <span>KITHUKU</span>
+        </h1>
+
+        <h2>
+          Candidate for Women Representative
+          — Kitui County
+        </h2>
+
+        <p>
+          A campaign platform for sharing Rhodah Kithuku's
+          vision, priorities, community engagement and commitment
+          to the people of Kitui County.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary">
+            Learn More
+          </a>
+
+          <a href="#contact" class="btn btn-outline">
+            Get Involved
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-photo">
+        <!-- Replace rhodah.jpg with Rhodah's actual photo -->
+        <img src="rhodah.jpg"
+             alt="Rhodah Kithuku">
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span>About</span>
+        <h2>Meet Rhodah Kithuku</h2>
+        <p>
+          Learn about the candidate, her background,
+          experience and public-service priorities.
+        </p>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-image">
+          <img src="rhodah-about.jpg"
+               alt="Rhodah Kithuku">
+        </div>
+
+        <div class="about-text">
+
+          <h3>Leadership With Purpose</h3>
+
+          <p>
+            Rhodah Kithuku is seeking to serve as the
+            Women Representative of Kitui County.
+          </p>
+
+          <p>
+            This section can be updated with her verified
+            biography, professional background, community
+            involvement, leadership experience and other
+            information she would like the people of Kitui
+            County to know.
+          </p>
+
+          <div class="highlight-box">
+            <strong>Public Service Commitment</strong>
+            <p>
+              A commitment to listening to residents,
+              engaging communities and presenting their
+              priorities in public leadership.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- VISION -->
+  <section class="vision" id="vision">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span>Our Direction</span>
+        <h2>Vision</h2>
+      </div>
+
+      <div class="vision-box">
+
+        <h3>A Stronger Voice for Kitui Women</h3>
+
+        <p>
+          Insert Rhodah Kithuku's official vision statement here.
+          The statement can describe the future she wants to work
+          toward for women, families, young people and communities
+          across Kitui County.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- AGENDA -->
+  <section class="agenda" id="agenda">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span>Priorities</span>
+        <h2>Areas of Focus</h2>
+        <p>
+          Replace or edit these areas according to Rhodah
+          Kithuku's official manifesto.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">🎓</div>
+          <h3>Education & Skills</h3>
+          <p>
+            Support education, skills development and
+            opportunities for young people.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">👩</div>
+          <h3>Women Empowerment</h3>
+          <p>
+            Promote opportunities that strengthen women's
+            participation in social and economic life.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">💼</div>
+          <h3>Economic Empowerment</h3>
+          <p>
+            Support initiatives that create sustainable
+            livelihoods and economic opportunities.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🏥</div>
+          <h3>Healthcare</h3>
+          <p>
+            Highlight healthcare priorities and community
+            needs in the official campaign agenda.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">💧</div>
+          <h3>Water & Environment</h3>
+          <p>
+            Address water access, environmental protection
+            and community resilience.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">👨‍👩‍👧</div>
+          <h3>Families & Communities</h3>
+          <p>
+            Promote community-centered initiatives and
+            support for vulnerable households.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- KITUI -->
+  <section class="kitui" id="kitui">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span>Our County</span>
+        <h2>Kitui County</h2>
+        <p>
+          Reaching communities across Kitui County.
+        </p>
+      </div>
+
+      <div class="county-grid">
+
+        <div class="ward">Kitui Central</div>
+        <div class="ward">Kitui East</div>
+        <div class="ward">Kitui Rural</div>
+        <div class="ward">Kitui South</div>
+
+        <div class="ward">Mwingi Central</div>
+        <div class="ward">Mwingi East</div>
+        <div class="ward">Mwingi West</div>
+        <div class="ward">Mumoni</div>
+
+        <div class="ward">Kyuso</div>
+        <div class="ward">Mutomo</div>
+        <div class="ward">Ikutha</div>
+        <div class="ward">Other Wards</div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MESSAGE -->
+  <section class="message">
+
+    <div class="container">
+
+      <h2>YOUR VOICE MATTERS</h2>
+
+      <p>
+        Share your ideas, concerns and priorities for Kitui County.
+        Community feedback can help shape the issues presented
+        through this campaign platform.
+      </p>
+
+      <a href="#contact" class="btn btn-outline">
+        Share Your Message
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span>Gallery</span>
+        <h2>Community Engagement</h2>
+        <p>
+          Campaign and community photos can be displayed here.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="gallery1.jpg"
+               alt="Rhodah Kithuku">
+        </div>
+
+        <div class="gallery-item">
+          <img src="gallery2.jpg"
+               alt="Community engagement">
+        </div>
+
+        <div class="gallery-item">
+          <img src="gallery3.jpg"
+               alt="Community event">
+        </div>
+
+        <div class="gallery-item">
+          <img src="gallery4.jpg"
+               alt="Community meeting">
+        </div>
+
+        <div class="gallery-item">
+          <img src="gallery5.jpg"
+               alt="Campaign event">
+        </div>
+
+        <div class="gallery-item">
+          <img src="gallery6.jpg"
+               alt="Community gathering">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span>Connect</span>
+        <h2>Get Involved</h2>
+        <p>
+          Share your ideas, questions or message.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+
+          <h3>Contact Rhodah Kithuku</h3>
+
+          <p>
+            Use the contact details below after replacing
+            them with the official campaign contacts.
+          </p>
+
+          <div class="contact-detail">
+            <strong>Phone</strong>
+            <span>+254 723 425318</span></span>
+          </div>
+
+          <div class="contact-detail">
+            <strong>WhatsApp</strong>
+            <span>+254 723 425318</span>
+          </div>
+
+          <div class="contact-detail">
+            <strong>Email</strong>
+            <span>info@example.com</span>
+          </div>
+
+          <div class="contact-detail">
+            <strong>Location</strong>
+            <span>Kitui County, Kenya</span>
+          </div>
+
+        </div>
+
+
+        <form onsubmit="sendMessage(event)">
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter your phone number"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="ward">Ward</label>
+
+            <select id="ward" required>
+              <option value="">Select your ward</option>
+              <option>Kitui Central</option>
+              <option>Kitui East</option>
+              <option>Kitui Rural</option>
+              <option>Kitui South</option>
+              <option>Mwingi Central</option>
+              <option>Mwingi East</option>
+              <option>Mwingi West</option>
+              <option>Mumoni</option>
+              <option>Kyuso</option>
+              <option>Mutomo</option>
+              <option>Ikutha</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+
+            <textarea
+              id="message"
+              placeholder="Write your message or idea..."
+              required></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      RHODAH <span>KITHUKU</span>
+    </div>
+
+    <p>
+      Women Representative Candidate — Kitui County
+    </p>
+
+    <div class="socials">
+
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="X">𝕏</a>
+      <a href="#" aria-label="Instagram">◎</a>
+      <a href="#" aria-label="TikTok">♪</a>
+
+    </div>
+
+    <p>
+      © 2027 Rhodah Kithuku Campaign. All rights reserved.
+    </p>
+
+    <p style="margin-top:8px;">
+      Website information should be updated with verified
+      campaign details and official contact information.
+    </p>
+
+  </footer>
+
+
+  <!-- WHATSAPP -->
+  <!-- Replace 254700000000 with the official WhatsApp number -->
+  <a
+    class="whatsapp"
+    href="https://wa.me/+254 723 425318"
+    target="_blank"
+    aria-label="Contact on WhatsApp">
+    ☎
+  </a>
+
+
+  <script>
+
+    /* MOBILE MENU */
+
+    function toggleMenu() {
+      document
+        .getElementById("navLinks")
+        .classList.toggle("active");
+    }
+
+    function closeMenu() {
+      document
+        .getElementById("navLinks")
+        .classList.remove("active");
+    }
+
+
+    /* CONTACT FORM */
+
+    function sendMessage(event) {
+
+      event.preventDefault();
+
+      const name =
+        document.getElementById("name").value;
+
+      const phone =
+        document.getElementById("phone").value;
+
+      const ward =
+        document.getElementById("ward").value;
+
+      const message =
+        document.getElementById("message").value;
+
+
+      /*
+        Replace this number with the official
+        campaign WhatsApp number.
+
+        Example:
+        254727836884
+      */
+
+      const campaignNumber =
+        "+254 723 425318";
+
+
+      const text =
+        "Hello Rhodah Kithuku Campaign.%0A%0A" +
+        "Name: " + encodeURIComponent(name) +
+        "%0APhone: " + encodeURIComponent(phone) +
+        "%0AWard: " + encodeURIComponent(ward) +
+        "%0A%0AMessage:%0A" +
+        encodeURIComponent(message);
+
+
+      window.open(
+        "https://wa.me/" +
+        campaignNumber +
+        "?text=" +
+        text,
+        "_blank"
+      );
+
+    }
+
+  </script>
+
+</body>
+</html>
